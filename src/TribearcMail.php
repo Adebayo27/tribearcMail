@@ -54,13 +54,7 @@ class TribearcMail {
         $response = curl_exec($curl);
         $res = $response;
         curl_close($curl);
-        if($res == 'Message sent!'){
-            return $res;
-        }else{
-            return 'An error occurred';
-        }
-        
-        
+        return $res;
     }
 
     static function tribearcSendBulkMail($subject, $content, $mails){
@@ -91,10 +85,6 @@ class TribearcMail {
         $response = curl_exec($curl);
         $res = $response;
         curl_close($curl);
-        if($res == 'Message sent!'){
-            return $res;
-        }else{
-            return 'An error occurred';
-        }
+        return $res;
     }
 }
