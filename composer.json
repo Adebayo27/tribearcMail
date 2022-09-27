@@ -1,6 +1,7 @@
 {
     "name": "adebayo27/tribearcmail",
     "description": "A wrapper for sending mail with tribearc mail api",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Adebayo27\\Tribearcmail\\": "src/"
