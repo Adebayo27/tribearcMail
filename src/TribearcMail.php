@@ -60,7 +60,7 @@ class TribearcMail {
 
     static function tribearcSendBulkMail($subject, $content, $mails){
         $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, 'https://newsletter.tribearc.com/api/campaigns/send-email.php');
+        curl_setopt($curl, CURLOPT_URL, 'https://newsletter.tribearc.com/api/campaigns/send_email.php');
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //
